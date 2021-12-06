@@ -61,4 +61,4 @@ LE Scan ...
 F8:24:41:C5:A0:BE yee-rc
 ```
 
-Check out https://github.com/psylity/yeelight-dimmer-python to retrieve your dimmer's beacon_key.
+Check out [yeelight-dimmer-python](https://github.com/psylity/yeelight-dimmer-python) to retrieve your dimmer's beacon_key.
