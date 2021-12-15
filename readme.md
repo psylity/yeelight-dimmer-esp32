@@ -5,8 +5,8 @@
 This is the component for Espressif's official IoT Development Framework for the ESP32 (ESP-IDF).
 It gives you the ability to control your ESP32 based device with yeelight dimmer.
 
-`yeelight_dimmer` - ESP-IDF component.
-`demo` - demo project
+* `yeelight_dimmer` - ESP-IDF component.
+* `demo` - demo project
 
 Just implement handlers for dimmer events and register the dimmers. Check out the `demo`
 
@@ -61,4 +61,4 @@ LE Scan ...
 F8:24:41:C5:A0:BE yee-rc
 ```
 
-Check out https://github.com/psylity/yeelight-dimmer-python to retrieve your dimmer's beacon_key.
+Check out [yeelight-dimmer-python](https://github.com/psylity/yeelight-dimmer-python) to retrieve your dimmer's beacon_key.

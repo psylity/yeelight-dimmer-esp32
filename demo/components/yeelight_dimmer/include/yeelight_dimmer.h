@@ -10,6 +10,7 @@ typedef struct yeelight_dimmer {
 typedef struct yeelight_dimmers_ctx_s {
     yeelight_dimmer_t *dimmers;
 
+    void (*onRawData)(yeelight_dimmer_t *dimmer, uint8_t *data, unsigned char len);
     void (*onRotate)(yeelight_dimmer_t *dimmer, signed char rotation, char state);
     void (*onClick)(yeelight_dimmer_t *dimmer);
     void (*onDoubleClick)(yeelight_dimmer_t *dimmer);

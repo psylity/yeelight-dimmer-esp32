@@ -198,6 +198,11 @@ void yeelight_dimmer_handle_advdata(yeelight_dimmers_ctx *ctx, yeelight_dimmer_t
 
     // parse decrypted payload
     yeelight_report_t *report = (yeelight_report_t *)decrypted_payload;
+
+    if (ctx->onRawData != NULL) {
+        ctx->onRawData(dimmer, (uint8_t *)report, sizeof(yeelight_report_t));
+    }
+
     if (report->type != 0x1001) // unknown packet type
         return;
     if (report->length != 3) // never seen such packet, don't know how to parse it
